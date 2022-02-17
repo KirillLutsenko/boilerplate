@@ -1,9 +1,11 @@
 // Core
-import React, { FC } from 'react';
-import { Outlet } from 'react-router-dom';
+import React, { FC, useEffect } from 'react';
 
 // Components
 import { ErrorBoundary } from '../../components';
+
+// Redux
+import { usePost } from '../../../bus/post';
 
 // Styles
 import * as S from './styles';
@@ -13,29 +15,31 @@ type PropTypes = {
     /* type props here */
 }
 
-// const items = [
-//     {
-//         id:   '0',
-//         name: 'Item 1',
-//     },
-//     {
-//         id:   '1',
-//         name: 'Item 2',
-//     },
-//     {
-//         id:   '2',
-//         name: 'Item 3',
-//     },
-// ];
-
 const Items: FC<PropTypes> = () => {
+    const { post, loading, fetchPost } = usePost();
+    // function* counter() {
+    //     let i = 0;
+
+    //     while (true) {
+    //         yield i += 1;
+    //     }
+    // }
+
+    // const counterGen = counter();
+
+    useEffect(() => {
+        fetchPost(1);
+    }, []);
+
     return (
         <S.Container>
-            Page: Items
-            {/* <div>
-                {items.map((item) => <S.NavButton to = { item.id }>{item.name}</S.NavButton>)}
-            </div> */}
-            <Outlet />
+            {loading && <p>Loading</p>}
+            {!loading && (
+                <S.Wrapper>
+                    <S.Name>{post.title}</S.Name>
+                    <S.Name>{post.body}</S.Name>
+                </S.Wrapper>
+            )}
         </S.Container>
     );
 };
