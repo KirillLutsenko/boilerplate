@@ -1,14 +1,8 @@
 // Core
-import styled, { CSSProperties } from 'styled-components';
+import styled  from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
-interface ContainerPropTypes {
-    addStyle: CSSProperties,
-}
-
-export const Container = styled.div<ContainerPropTypes>(({ addStyle }) => ({
-    ...addStyle,
-}));
+export const Container = styled.div``;
 
 export const NavButton = styled(NavLink)(() => ({
     display:        'block',

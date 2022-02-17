@@ -13,28 +13,28 @@ type PropTypes = {
     /* type props here */
 }
 
-const items = [
-    {
-        id:   '0',
-        name: 'Item 1',
-    },
-    {
-        id:   '1',
-        name: 'Item 2',
-    },
-    {
-        id:   '2',
-        name: 'Item 3',
-    },
-];
+// const items = [
+//     {
+//         id:   '0',
+//         name: 'Item 1',
+//     },
+//     {
+//         id:   '1',
+//         name: 'Item 2',
+//     },
+//     {
+//         id:   '2',
+//         name: 'Item 3',
+//     },
+// ];
 
 const Items: FC<PropTypes> = () => {
     return (
-        <S.Container addStyle = {{ backgroundColor: 'bisque' }}>
+        <S.Container>
             Page: Items
-            <div>
+            {/* <div>
                 {items.map((item) => <S.NavButton to = { item.id }>{item.name}</S.NavButton>)}
-            </div>
+            </div> */}
             <Outlet />
         </S.Container>
     );
