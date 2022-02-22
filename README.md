@@ -1,11 +1,5 @@
 # Zaporiz'ka Sich
 
-### Welcome to Arziburst React App.
-
-Arziburst React App works on Windows, Linux, macOS.<br>
-If something doesn’t work, please [file an issue](https://github.com/Arziburst/boilerplate/issues/new).<br>
-If you have some enhancements, please [file an pull request](https://github.com/Arziburst/boilerplate/compare).<br>
-
 ## Quick Overview
 
 ```
