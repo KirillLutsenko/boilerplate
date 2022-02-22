@@ -19,4 +19,19 @@ export const GlobalStyles = createGlobalStyle`
     input[type=number] {
         -moz-appearance: textfield;
     }
+
+    html, button {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    button {
+        cursor: pointer;
+    }
+
+    a {
+       text-decoration: none;
+       color: black;
+    }
 `;

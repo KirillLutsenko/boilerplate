@@ -1,11 +1,13 @@
 // Core
 import React, { FC } from 'react';
+import { Outlet } from 'react-router-dom';
 
 // Bus
 // import {} from '../../../bus/'
 
 // Components
 import { ErrorBoundary } from '../../components';
+import { Button } from '../../elements/ui/Button';
 
 // Styles
 import * as S from './styles';
@@ -18,7 +20,14 @@ type PropTypes = {
 const Register: FC<PropTypes> = () => {
     return (
         <S.Container>
-            Page: Register
+            <S.Title>
+                Страница для регистрации
+            </S.Title>
+            <Button
+                to = '/'>
+                Вернуться
+            </Button>
+            <Outlet />
         </S.Container>
     );
 };

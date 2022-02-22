@@ -1,6 +1,6 @@
 // Core
 import React, { FC } from 'react';
-import { Outlet } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 // Components
 import { ErrorBoundary } from '../../components';
@@ -32,11 +32,10 @@ const Items: FC<PropTypes> = () => {
     return (
         <S.Container>
             Page: Items
-            dsdsdsd
+            <Link to = '/register'>Registation</Link>
             {/* <div>
                 {items.map((item) => <S.NavButton to = { item.id }>{item.name}</S.NavButton>)}
             </div> */}
-            <Outlet />
         </S.Container>
     );
 };

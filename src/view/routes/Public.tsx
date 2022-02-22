@@ -17,7 +17,7 @@ export const Public: FC = () => {
                     element:  <Items />,
                     children: [{ path: ':id', element: <Item /> }],
                 },
-                { path: '*', element: <Navigate to = 'register' /> },
+                { path: '*', element: <Navigate to = '' /> },
             ],
         },
     ]);

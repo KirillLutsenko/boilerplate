@@ -8,11 +8,11 @@ import React, { FC } from 'react';
 import * as S from './styles';
 
 // Types
-type PropTypes = {
+type __componentName__(pascalCase)T = {
     /* type props here */
 }
 
-export const __componentName__(pascalCase): FC<PropTypes> = () => {
+export const __componentName__(pascalCase): FC<__componentName__(pascalCase)T> = () => {
     return (
         <S.Container>
             Component: __componentName__(pascalCase)

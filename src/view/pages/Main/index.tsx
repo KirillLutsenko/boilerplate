@@ -13,7 +13,7 @@ const Main: FC = () => {
         <Container>
             <Nav>
                 <Link to = 'register'>Registation</Link>
-                <Link to = '/items'>Items</Link>
+                {/* <Link to = '/items'>Items</Link> */}
             </Nav>
             <Outlet />
         </Container>
