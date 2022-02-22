@@ -32,6 +32,7 @@ const Items: FC<PropTypes> = () => {
     return (
         <S.Container>
             Page: Items
+            dsdsdsd
             {/* <div>
                 {items.map((item) => <S.NavButton to = { item.id }>{item.name}</S.NavButton>)}
             </div> */}
